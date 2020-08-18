@@ -1,0 +1,142 @@
+{"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053102"}, "transactions": [{"currency": "CNY", "amount": 14.53, "transaction_time": "2020-12-08"}, {"currency": "CNY", "amount": 1.43, "transaction_time": "2020-12-09"}, {"currency": "CNY", "amount": 1526.9, "transaction_time": "2020-12-10"}]}{"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "10 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369130"}, "transactions": [{"currency": "CNY", "amount": 413.7, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 43.54, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 28.13, "transaction_time": "2019-05-12"}]}{"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "13 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369131"}, "transactions": [{"currency": "CNY", "amount": 987.37, "transaction_time": "2019-05-13"}, {"currency": "CNY", "amount": 7.14, "transaction_time": "2019-05-14"}]}{"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053100"}, "transactions": [{"currency": "CNY", "amount": 1426.93, "transaction_time": "2020-12-07"}]}{"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053101"}, "transactions": [{"currency": "CNY", "amount": 142.3, "transaction_time": "2020-12-07"}]}{"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053102"}, "transactions": [{"currency": "CNY", "amount": 14.53, "transaction_time": "2020-12-08"}, {"currency": "CNY", "amount": 1.43, "transaction_time": "2020-12-09"}, {"currency": "CNY", "amount": 1526.9, "transaction_time": "2020-12-10"}]}[{"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "10 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369130"}, "transactions": [{"currency": "CNY", "amount": 413.7, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 43.54, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 28.13, "transaction_time": "2019-05-12"}]}, {"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "13 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369131"}, "transactions": [{"currency": "CNY", "amount": 987.37, "transaction_time": "2019-05-13"}, {"currency": "CNY", "amount": 7.14, "transaction_time": "2019-05-14"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053100"}, "transactions": [{"currency": "CNY", "amount": 1426.93, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053101"}, "transactions": [{"currency": "CNY", "amount": 142.3, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053102"}, "transactions": [{"currency": "CNY", "amount": 14.53, "transaction_time": "2020-12-08"}, {"currency": "CNY", "amount": 1.43, "transaction_time": "2020-12-09"}, {"currency": "CNY", "amount": 1526.9, "transaction_time": "2020-12-10"}]}][{"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "10 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369130"}, "transactions": [{"currency": "CNY", "amount": 413.7, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 43.54, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 28.13, "transaction_time": "2019-05-12"}]}, {"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "13 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369131"}, "transactions": [{"currency": "CNY", "amount": 987.37, "transaction_time": "2019-05-13"}, {"currency": "CNY", "amount": 7.14, "transaction_time": "2019-05-14"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053100"}, "transactions": [{"currency": "CNY", "amount": 1426.93, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053101"}, "transactions": [{"currency": "CNY", "amount": 142.3, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053102"}, "transactions": [{"currency": "CNY", "amount": 14.53, "transaction_time": "2020-12-08"}, {"currency": "CNY", "amount": 1.43, "transaction_time": "2020-12-09"}, {"currency": "CNY", "amount": 1526.9, "transaction_time": "2020-12-10"}]}][{"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "10 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369130"}, "transactions": [{"currency": "CNY", "amount": 413.7, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 43.54, "transaction_time": "2019-05-11"}, {"currency": "CNY", "amount": 28.13, "transaction_time": "2019-05-12"}]}, {"customer": {"customer_id": "101", "first_name": "Stevie", "last_name": "Dailly", "email": "sdailly0@1688.com", "gender": "Male", "street_address": "13 Hanson Pass", "city": "Shaoguan", "postal_code": "303169.0", "country_name": "China"}, "account": {"account_no": "3567970665369131"}, "transactions": [{"currency": "CNY", "amount": 987.37, "transaction_time": "2019-05-13"}, {"currency": "CNY", "amount": 7.14, "transaction_time": "2019-05-14"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053100"}, "transactions": [{"currency": "CNY", "amount": 1426.93, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053101"}, "transactions": [{"currency": "CNY", "amount": 142.3, "transaction_time": "2020-12-07"}]}, {"customer": {"customer_id": "102", "first_name": "Stacia", "last_name": "Doe", "email": "sdoe1@jugem.jp", "gender": "Female", "street_address": "7972 American Alley", "city": "Qiaotou", "postal_code": null, "country_name": "China"}, "account": {"account_no": "3544278454053102"}, "transactions": [{"currency": "CNY", "amount": 14.53, "transaction_time": "2020-12-08"}, {"currency": "CNY", "amount": 1.43, "transaction_time": "2020-12-09"}, {"currency": "CNY", "amount": 1526.9, "transaction_time": "2020-12-10"}]}][
+    {
+        "customer": {
+            "customer_id": "101",
+            "first_name": "Stevie",
+            "last_name": "Dailly",
+            "email": "sdailly0@1688.com",
+            "gender": "Male",
+            "street_address": "10 Hanson Pass",
+            "city": "Shaoguan",
+            "postal_code": "303169.0",
+            "country_name": "China"
+        },
+        "account": {
+            "account_no": "3567970665369130"
+        },
+        "transactions": [
+            {
+                "currency": "CNY",
+                "amount": 413.7,
+                "transaction_time": "2019-05-11"
+            },
+            {
+                "currency": "CNY",
+                "amount": 43.54,
+                "transaction_time": "2019-05-11"
+            },
+            {
+                "currency": "CNY",
+                "amount": 28.13,
+                "transaction_time": "2019-05-12"
+            }
+        ]
+    },
+    {
+        "customer": {
+            "customer_id": "101",
+            "first_name": "Stevie",
+            "last_name": "Dailly",
+            "email": "sdailly0@1688.com",
+            "gender": "Male",
+            "street_address": "13 Hanson Pass",
+            "city": "Shaoguan",
+            "postal_code": "303169.0",
+            "country_name": "China"
+        },
+        "account": {
+            "account_no": "3567970665369131"
+        },
+        "transactions": [
+            {
+                "currency": "CNY",
+                "amount": 987.37,
+                "transaction_time": "2019-05-13"
+            },
+            {
+                "currency": "CNY",
+                "amount": 7.14,
+                "transaction_time": "2019-05-14"
+            }
+        ]
+    },
+    {
+        "customer": {
+            "customer_id": "102",
+            "first_name": "Stacia",
+            "last_name": "Doe",
+            "email": "sdoe1@jugem.jp",
+            "gender": "Female",
+            "street_address": "7972 American Alley",
+            "city": "Qiaotou",
+            "postal_code": null,
+            "country_name": "China"
+        },
+        "account": {
+            "account_no": "3544278454053100"
+        },
+        "transactions": [
+            {
+                "currency": "CNY",
+                "amount": 1426.93,
+                "transaction_time": "2020-12-07"
+            }
+        ]
+    },
+    {
+        "customer": {
+            "customer_id": "102",
+            "first_name": "Stacia",
+            "last_name": "Doe",
+            "email": "sdoe1@jugem.jp",
+            "gender": "Female",
+            "street_address": "7972 American Alley",
+            "city": "Qiaotou",
+            "postal_code": null,
+            "country_name": "China"
+        },
+        "account": {
+            "account_no": "3544278454053101"
+        },
+        "transactions": [
+            {
+                "currency": "CNY",
+                "amount": 142.3,
+                "transaction_time": "2020-12-07"
+            }
+        ]
+    },
+    {
+        "customer": {
+            "customer_id": "102",
+            "first_name": "Stacia",
+            "last_name": "Doe",
+            "email": "sdoe1@jugem.jp",
+            "gender": "Female",
+            "street_address": "7972 American Alley",
+            "city": "Qiaotou",
+            "postal_code": null,
+            "country_name": "China"
+        },
+        "account": {
+            "account_no": "3544278454053102"
+        },
+        "transactions": [
+            {
+                "currency": "CNY",
+                "amount": 14.53,
+                "transaction_time": "2020-12-08"
+            },
+            {
+                "currency": "CNY",
+                "amount": 1.43,
+                "transaction_time": "2020-12-09"
+            },
+            {
+                "currency": "CNY",
+                "amount": 1526.9,
+                "transaction_time": "2020-12-10"
+            }
+        ]
+    }
+]
