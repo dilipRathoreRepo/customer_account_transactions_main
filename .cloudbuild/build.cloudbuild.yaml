@@ -1,0 +1,29 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    id: "Build Docker Image"
+    waitFor:
+      - "-"
+    args:
+      - build
+      - .
+      - --tag=gcr.io/rising-minutia-254502/customer_account_transactions:$COMMIT_SHA
+    # run unit tests
+  - name: gcr.io/cloud-builders/docker
+    id: "Run Tests"
+    waitFor:
+      - "Build Docker Image"
+    args:
+      - run
+      - -e
+      - ENV=DEV
+      - -e
+      - GOOGLE_APPLICATION_CREDENTIALS="/app/dummy.json"
+      - e
+      - BQ_PROJECT_ID=dummy
+      - gcr.io/rising-minutia-254502/customer_account_transactions:$COMMIT_SHA
+      - -m
+      - pytest
+      - tests/unit
+images:
+  - "gcr.io/rising-minutia-254502/customer_account_transactions:$COMMIT_SHA"
+tags: ["customer-account-transactions"]

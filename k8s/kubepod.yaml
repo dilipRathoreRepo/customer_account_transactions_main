@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: customer-account-transactions-load-pod
+  namespace: default
+  labels:
+    app: customer-account-transactions-load-pod
+spec:
+  containers:
+    - name: customer-account-transactions-load-pod
+      imagePullPolicy: Always
+      image: gcr.io/rising-minutia-254502/customer_account_transactions:_COMMIT_SHA
+      resources:
+        requests:
+          cpu: 400m
+          memory: 200Mi
+        limits:
+          cpu: 400m
+          memory: 200Mi
+      env:
+        - name: ENV
+          value: _CURRENT_ENV
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: "/app/key.json"
+        - name: BQ_PROJECT_ID
+          value: _BIGQUERY_PROJECT_ID
+      volumeMounts:
+        - name: service-key
+          mountPath: /app/key.json
+          subPath: key.json
+  volumes:
+    - name: service-key
+      secret:
+        secretName: service-account-key
+        items:
+          - key: key.json
+            path: key.json
+

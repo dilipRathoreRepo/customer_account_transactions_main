@@ -12,4 +12,4 @@ SELECT
   city,
   postal_code,
   country_name
-FROM `rising-minutia-254502.customer_account_transactions_ds.cust_acct_txn_table_new`
+FROM `{PROJECT_ID}.customer_account_transactions_ds.cust_acct_txn_table_new`

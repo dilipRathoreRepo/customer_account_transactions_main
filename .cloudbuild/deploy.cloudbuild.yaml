@@ -1,0 +1,39 @@
+substitutions:
+  _DEPLOYMENT_ENVIRONMENT: "DEV"
+  _GKE_PROJECT_ID: "rising-minutia-254502"
+  _GKE_CLUSTER_NAME: "my-first-cluster-1"
+  _GKE_CLUSTER_REGION: "us-central1"
+  _GKE_CLUSTER_ZONE: "us-central1-c"
+  _GKE_NAMESPACE: ""
+  _BQ_PROJECT_ID: "rising-minutia-254502"
+
+tags:
+  - customer-account-transactions-pod
+options:
+  env:
+    - CLOUDSDK_CORE_PROJECT=${_GKE_PROJECT_ID}
+    - CLOUDSDK_CONTAINER_CLUSTER=${_GKE_CLUSTER_NAME}
+    - CLOUDSDK_COMPUTE_REGION=${_GKE_CLUSTER_REGION}
+steps:
+  - name: "gcr.io/cloud-builders/kubectl"
+    id: "get credentials"
+    waitFor:
+      - "-"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        gcloud container clusters get-credentials ${_GKE_CLUSTER_NAME} --zone ${_GKE_CLUSTER_ZONE} --project ${_GKE_PROJECT_ID}
+  - name: "gcr.io/cloud-builders/kubectl"
+    id: "Deploy pod"
+    waitFor:
+      - "get credentials"
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+        gcloud container clusters get-credentials ${_GKE_CLUSTER_NAME} --zone ${_GKE_CLUSTER_ZONE} --project ${_GKE_PROJECT_ID}
+        set -ie "s/_COMMIT_SHA/${COMMIT_SHA}/g" k8s/kubepod.yaml && \
+        set -ie "s/_CURRENT_ENV/${_DEPLOYMENT_ENVIRONMENT}/g" k8s/kubepod.yaml && \
+        set -ie "s/_BIGQUERY_PROJECT_ID/${_BQ_PROJECT_ID}/g" k8s/kubepod.yaml && \
+        kubectl apply -f k8s/kubepod.yaml

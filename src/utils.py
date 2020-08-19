@@ -6,12 +6,12 @@ from datetime import date
 from datetime import datetime
 from unittest.mock import patch
 from google.cloud import bigquery
-from src.exceptions import InvalidEnvironmentVariable
-from src.constants import valid_env, SQL_FILE, BQ_LOCATION
+from exceptions import InvalidEnvironmentVariable
+from constants import valid_env, SQL_FILE, BQ_LOCATION
 
 
-@patch.dict('os.environ', {'ENV': 'DEV'})
-@patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
+# @patch.dict('os.environ', {'ENV': 'DEV'})
+# @patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
 def validate_env_var():
     if os.environ["ENV"].upper() not in valid_env:
         raise InvalidEnvironmentVariable("Incorrect environment variable {}".format(os.environ["ENV"]))
@@ -20,7 +20,7 @@ def validate_env_var():
         raise InvalidEnvironmentVariable("Environment variable not set for BQ_PROJECT_ID")
 
 
-@patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
+# @patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
 def get_bq_data():
     sql_file_abs_path = get_abs_path(SQL_FILE)
     query_string = get_bq_sql(sql_file_abs_path).format(PROJECT_ID=os.environ["BQ_PROJECT_ID"])
@@ -41,7 +41,7 @@ def get_bq_sql(sql_file):
         logging.exception("Exception occurred {}".format(str(e)))
 
 
-@patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
+# @patch.dict('os.environ', {'BQ_PROJECT_ID': 'rising-minutia-254502'})
 def query_tables(query_string):
     """
     Reads customer and account data from BigQuery and returns result

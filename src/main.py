@@ -2,9 +2,9 @@ import sys
 import os
 import logging
 from unittest.mock import patch
-from src.constants import URL
-from src.utils import validate_env_var, get_bq_data, json_dump
-from src.exceptions import InvalidEnvironmentVariable, RestApiException
+from constants import URL
+from utils import validate_env_var, get_bq_data, json_dump
+from exceptions import InvalidEnvironmentVariable, RestApiException
 
 
 logging.basicConfig(
@@ -15,7 +15,7 @@ logging.basicConfig(
 
 
 class CustomerAccountTransactions:
-    @patch.dict('os.environ', {'ENV': 'DEV'})
+    # @patch.dict('os.environ', {'ENV': 'DEV'})
     def __init__(self):
         self.data = []
         self.success_records = 0
@@ -70,7 +70,7 @@ class CustomerAccountTransactions:
             self.success_records += 1
 
     def rest_api_call(self):
-        """Calls an api /v1/updatetransactions"""
+        """ #TODO - Calls an api /v1/updatetransactions"""
         json_dump(self.data)
 
     def summary(self):
