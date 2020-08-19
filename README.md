@@ -15,6 +15,7 @@ pip install -r requirements.txt
 ```python
 python src/main.py
 ```
+**Note**: The code requires environment variables to be available at run time which are passed via Cloud Build Trigger -> Kubernetes Manifest File -> Python main.py. Pls run unit test cases on local system or patch the environment variables in main.py and utils.py to run locally.
 
 ## Project Structure
 
