@@ -1,6 +1,5 @@
 import unittest
 from unittest.mock import patch
-import os
 import json
 from collections import namedtuple
 from main import CustomerAccountTransactions

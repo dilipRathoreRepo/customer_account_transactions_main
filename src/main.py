@@ -1,9 +1,8 @@
 import sys
 import os
 import logging
-from unittest.mock import patch
 from constants import URL
-from utils import validate_env_var, get_bq_data, json_dump
+from utils import validate_env_var, get_bq_data, json_dump, wait
 from exceptions import InvalidEnvironmentVariable, RestApiException
 
 
@@ -15,7 +14,6 @@ logging.basicConfig(
 
 
 class CustomerAccountTransactions:
-    # @patch.dict('os.environ', {'ENV': 'DEV'})
     def __init__(self):
         self.data = []
         self.success_records = 0
@@ -76,12 +74,21 @@ class CustomerAccountTransactions:
     def summary(self):
         """
         Logs success and failure record counts
-        :return:
+        :return: None
         """
         logging.info("Approx Success Records are : {}".format(self.success_records))
 
 
 def main():
+    """
+    Main method which does following:
+        1) validates the environment variables passed via Cloud Build Trigger -> Cloud Build -> Kubernetes Manifest file
+        2) gets BigQuery Dataset Table's data for customer account transactions
+        3) Generates a Payload
+        4) Makes an API call (currently just dumps data to a local file) #TODO
+        5) Generates a summary (i.e. total number of records successfully written via api call, failure records etc.
+    :return: None
+    """
     try:
         logging.info("Starting validate_env_var..")
         validate_env_var()
@@ -100,6 +107,9 @@ def main():
 
         logging.info("Starting summary method call..")
         cat.summary()
+
+        logging.info("Waiting..")
+        wait()
 
     except InvalidEnvironmentVariable as e:
         logging.exception("Following error occurred : {}".format(str(e)))
