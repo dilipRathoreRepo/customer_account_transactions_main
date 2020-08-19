@@ -18,7 +18,7 @@ steps:
       - ENV=DEV
       - -e
       - GOOGLE_APPLICATION_CREDENTIALS="/app/dummy.json"
-      - e
+      - -e
       - BQ_PROJECT_ID=dummy
       - gcr.io/rising-minutia-254502/customer_account_transactions:$COMMIT_SHA
       - -m
