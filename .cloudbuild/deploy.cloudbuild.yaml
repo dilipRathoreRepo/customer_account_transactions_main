@@ -33,7 +33,7 @@ steps:
       - "-c"
       - |
         gcloud container clusters get-credentials ${_GKE_CLUSTER_NAME} --zone ${_GKE_CLUSTER_ZONE} --project ${_GKE_PROJECT_ID}
-        set -ie "s/_COMMIT_SHA/${COMMIT_SHA}/g" k8s/kubepod.yaml && \
-        set -ie "s/_CURRENT_ENV/${_DEPLOYMENT_ENVIRONMENT}/g" k8s/kubepod.yaml && \
-        set -ie "s/_BIGQUERY_PROJECT_ID/${_BQ_PROJECT_ID}/g" k8s/kubepod.yaml && \
+        sed -ie "s/_COMMIT_SHA/${COMMIT_SHA}/g" k8s/kubepod.yaml && \
+        sed -ie "s/_CURRENT_ENV/${_DEPLOYMENT_ENVIRONMENT}/g" k8s/kubepod.yaml && \
+        sed -ie "s/_BIGQUERY_PROJECT_ID/${_BQ_PROJECT_ID}/g" k8s/kubepod.yaml && \
         kubectl apply -f k8s/kubepod.yaml
