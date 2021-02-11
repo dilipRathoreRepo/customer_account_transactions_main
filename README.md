@@ -1,6 +1,6 @@
-# Customer-Account-Transactions
+# data-processing-microservice
 
-Customer-Account-Transactions is a Python project for processing and analyzing customer's transactions records and generate meaning ful insights.
+It is a Python project for processing and analyzing customer's account & transactions records and generate meaningful insights.
 
 ## Installation
 
