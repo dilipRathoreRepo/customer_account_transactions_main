@@ -1,6 +1,6 @@
-# Customer-Account-Transactions Cloud Build CI/CD
+# Cloud Build CI/CD
 
-Customer-Account-Transactions is a Python library for processing and analyzing customer's transactions records.
+It is a Python library for processing and analyzing customer's transactions records.
 
 ## Cloud Build Process (build.cloudbuild.yaml)
 
